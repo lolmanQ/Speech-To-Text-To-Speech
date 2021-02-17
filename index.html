@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="main.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/bulmaswatch/materia/bulmaswatch.min.css">
+</head>
+<body>
+	<form action="">
+		<textarea class="textarea" type="text" name="textToRead" id="texting" class="txt" id="inputTxt"></textarea>
+		<select class="select" name="" id=""></select>
+		<button class="button is-primary">Speek</button>
+	</form>
+	<div class="settings">
+		<input class="input" type="number" id="pitch">
+		<button class="button" onclick="PauseTalking()">pause/resume</button>
+		<button class="button" onclick="StopTalking()">STOP</button>
+		<button class="button" onclick="UseVoice()">Voice</button>
+	</div>
+	<div>
+		<h1 class="title">Sentence Text</h2>
+		<p id="sentenceText">text</p>
+		<input class="input" list="wordSearch" id="sentenceInput">
+		<datalist id="wordSearch">
+
+		</datalist>
+		<input class="input" type="file" name="inputfile"
+            id="inputfile">
+	</div>
+	<div class="phrases">
+		<button class="button is-primary" onclick="SaySentence()">Say</button>
+		<button class="button" onclick="ClearSentence()">Clear</button>
+		<button class="button" onclick="AddToSentence('. ')">.</button>
+		<button class="button" onclick="AddToSentence(', ')">,</button>
+	</div>
+	
+</body>
+</html>

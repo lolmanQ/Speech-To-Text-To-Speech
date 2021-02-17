@@ -1,0 +1,22 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 400px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.phrases button {
+  font-size: 18px;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */
